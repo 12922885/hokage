@@ -4,7 +4,7 @@
   "description": "3DS Ninja and Samurai servers replacement",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./src/server"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +14,9 @@
     "express": "^4.17.1",
     "express-subdomain": "^1.0.5",
     "fs-extra": "^8.1.0",
-    "morgan": "^1.9.1"
+    "install": "^0.13.0",
+    "morgan": "^1.9.1",
+    "package-lock.json": "^1.0.0",
+    "package.json": "^2.0.1"
   }
 }

@@ -9,6 +9,8 @@ const ninjaRouter = express.Router();
 // Router to handle the subdomain restriction
 const ninjaCTRRouter = express.Router();
 
+
+
 // Create subdomains
 logger.info('[NINJA] Creating \'ninja.ctr.shop\' subdomain');
 ninjaRouter.use(subdomain('ninja.ctr.shop', ninjaCTRRouter));
@@ -20,5 +22,9 @@ ninjaCTRRouter.use('/ninja', routes.SERVICE_HOSTS);
 ninjaCTRRouter.use('/ninja', routes.SESSION);
 ninjaCTRRouter.use('/ninja', routes.ONLINE_PRICES);
 ninjaCTRRouter.use('/ninja', routes.EC_INFO);
+ninjaCTRRouter.use('/ninja', routes.TAX_LOCATION);
+ninjaCTRRouter.use('/ninja', routes.PREPURCHASE);
+ninjaCTRRouter.use('/ninja', routes.REPL);
+ninjaCTRRouter.use('/ninja', routes.PURCHAS);
 
 module.exports = ninjaRouter;

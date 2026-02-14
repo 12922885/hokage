@@ -3,16 +3,16 @@ const router = require('express').Router();
 router.get('/ws/:region/title/:title', (request, response) => {
 	response.json({
 		title: {
-			formal_name: 'RetroArch',
-			description: 'Play all the cores',
+			formal_name: 'title',
+			description: "This is a test title for pretendo's Hokage server.",
 			genres: {
 				genre: [
 					{
-						name: 'RPG',
+						name: 'Test',
 						id: 8
 					},
 					{
-						name: 'Adventure',
+						name: 'Hello World!',
 						id: 4
 					}
 				],
@@ -20,10 +20,10 @@ router.get('/ws/:region/title/:title', (request, response) => {
 			},
 			keywords: {
 				keyword: [
-					'RetroArch',
+					'Pretendo',
 					'Retro',
-					'Libretro',
-					'Emulation',
+					'Online',
+					'Test Title',
 					'Emulator'
 				]
 			},
@@ -38,7 +38,7 @@ router.get('/ws/:region/title/:title', (request, response) => {
 			number_of_players: '1 player',
 			disclaimer: 'Please no piracy',
 			copyright: {
-				text: '©2019 Libretro'
+				text: 'Copyright? Never heard of her'
 			},
 			screenshots: {
 				screenshot: [
@@ -91,12 +91,12 @@ router.get('/ws/:region/title/:title', (request, response) => {
 				}
 			},
 			ticket_available: false,
-			data_size: 672256,
+			data_size: 1030080,
 			download_code_sales: false,
 			download_card_sales: {
 				available: false
 			},
-			name: 'RetroArch',
+			name: 'Test',
 			thumbnails: {
 				thumbnail: [
 					{
@@ -121,14 +121,14 @@ router.get('/ws/:region/title/:title', (request, response) => {
 			},
 			id: request.params.title,
 			platform: {
-				name: 'Nintendo 3DS Download Only',
-				id: 19,
+				name: '3DS',
+				id: 4,
 				device: 'CTR',
-				category: 8
+				category: 2
 			},
 			publisher: {
-				name: 'Libretro',
-				id: 900 // Fake
+				name: 'Pretendo',
+				id: 11 // Fake
 			},
 			product_code: 'CTR-N-BE4A',
 			icon_url: 'https://i.imgur.com/dINB9cQ.jpg',

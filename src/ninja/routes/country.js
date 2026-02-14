@@ -3,6 +3,7 @@ const router = require('express').Router();
 // TODO:
 // Check `country` and make this dynamic
 router.get('/ws/country/:country', (request, response) => {
+let userCountry = request.params.country; 
 	response.json({
 		country_detail: {
 			region_code: 'USA',
@@ -40,12 +41,12 @@ router.get('/ws/country/:country', (request, response) => {
 			},
 			default_timezone: '-08:00',
 			eshop_available: true,
-			name: 'United States',
-			iso_code: 'US',
+			name: userCountry,
+			iso_code: userCountry,
 			default_language_code: 'en',
 			language_selectable: true
 		}
-	});
-});
+	});}
+);
 
 module.exports = router;

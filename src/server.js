@@ -5,6 +5,7 @@ const morgan = require('morgan');
 const logger = require('./logger');
 const config = require('./config.json');
 
+
 const { http: { port } } = config;
 const app = express();
 
@@ -14,6 +15,7 @@ const ninja = require('./ninja');
 // START APPLICATION
 app.set('etag', false);
 app.disable('x-powered-by');
+app.set('subdomain offset', 1); 
 
 // Create router
 logger.info('Setting up Middleware');

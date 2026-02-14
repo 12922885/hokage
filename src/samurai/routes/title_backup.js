@@ -1,0 +1,9 @@
+const router = require('express').Router();
+
+router.get('/ws/:region/title/:title', (request, response) => {
+	response.json({
+		"title":{"product_code":"CTR-P-ASLE","name":"title","icon_url":"https://kanzashi-ctr.cdn.nintendo.net/i/58e80079f0895d36b675539d5624d4cc8f2775bcdc29d349b13884f6818ffc52.jpg","banner_url":"https://kanzashi-ctr.cdn.nintendo.net/i/c6897bcd7b9c137e0ccf91070ab242de3f0354b62c9ae25d5130a350e636503f.jpg","thumbnails":{"thumbnail":{"url":"https://kanzashi-ctr.cdn.nintendo.net/i/eda96c4cdbe2929febde13d0d812a35cd5aca16602179b6a30960a2053658419.jpg","height":"112","width":"112","type":"small"}},"platform":{"name":"3DS","id":"4","device":"CTR","category":"2"},"publisher":{"name":"Pretendo","id":"11"},"display_genre":"Test","rating_info":{"rating_system":{"name":"ESRB","id":"202"},"rating":{"icons":{"icon":[{"url":"https://kanzashi-ctr.cdn.nintendo.net/i/d96122dbb89250582816a67461bf8080f030402720e46032980582bca516778d.jpg","type":"normal"},{"url":"https://kanzashi-ctr.cdn.nintendo.net/i/2d2bc9f60a5a4dbf44175cf1cfe1adc52abbee7ad66ebd6e3978966f84ae9c58.jpg","type":"small"}]},"name":"E","age":"6","id":"2"},"descriptors":{"descriptor":{"name":"Test Esrb desc 1"}}},"release_date_on_eshop":"2019-12-14","retail_sales":false,"eshop_sales":true,"web_sales":true,"demo_available":false,"aoc_available":false,"in_app_purchase":false,"formal_name":"Title","description":"This is a test for Pretendo's Hokage server, this is located in src/samurai/routes/title.js as a fixed title","genres":{"genre":{"name": "Test_Title", "id": 12 },"length":"1"},"keywords":"","languages":{"language":{"iso_code":"en","name":"English"}},"disclaimer":"This server is kinda broken right now, expect more soon!.","ticket_available":false,"data_size":4808,"download_code_sales":false,"download_card_sales":{"available":false},"public":true,"new":true,"id": "0004000000038600"}
+	});
+});
+
+module.exports = router;

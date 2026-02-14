@@ -11,23 +11,31 @@ router.get('/ws/:country/titles/online_prices', (request, response) => {
 	// Just mark every title as free, we don't charge money here
 	for (const titleId of titleIds) {
 		prices.push({
-			title_id: titleId,
+			title_id:  500100,
 			eshop_sales_status: 'onsale',
 			price: {
 				regular_price: {
-					amount: '$39.99',
+					amount: '$10.00',
 					currency: 'USD',
-					raw_value: '39.99',
-					id: titleId === '50010000045116' ? 2144794400 : 1234567890
+					raw_value: '10',
+					id: 2172116800
 				}
 			},
 			title_owned: false
 		});
 	}
+  response.set({
+    'vary': 'cookie',
+	'Content-Type': 'application/json',
+	'X-Frame-Options': 'DENY',
+	'X-Content-Type-Options': 'nosniff',
+	'Referrer-Policy': 'same-origin',
+	'Cross-Origin-Opener-Policy': 'same-origin'
+  })
 
 	response.json({
-		online_prices: {
-			online_price: prices
+		"online_prices":
+		 {"online_price": prices
 		}
 	});
 });

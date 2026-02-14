@@ -15,12 +15,6 @@ router.post('/ws/my/session/!open', (request, response) => {
 
 	response.json({
 		session_config: {
-			pid: 1234567890,
-			account_id: 'eShop Test Account',
-			mii: {
-				name: 'eShop Test Account',
-				icon_url: 'https://mii-secure.cdn.nintendo.net/u2jg043u028x_normal_face.png'
-			},
 			country: 'US',
 			saved_lang: 'en',
 			shop_account_initialized: false,
@@ -108,9 +102,9 @@ router.get('/ws/my/wishlist', (request, response) => {
 router.get('/ws/my/balance/current', (request, response) => {
 	response.json({
 		balance: {
-			amount: '$0.00',
+			amount: '$100.00',
 			currency: 'USD',
-			raw_value: '0'
+			raw_value: '100'
 		}
 	});
 });

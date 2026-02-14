@@ -27,6 +27,8 @@ router.get('/ws/:region/directories', (request, response) => {
 
 // title bundle
 router.get('/ws/:region/directory/:id', (request, response) => {
+	titleIds = "0004000008B61400"[0].split(',');
+
 	response.json({
 		directory: {
 			alias: '60043C3FA22E5D8D3D98D0DADA2B083E',
@@ -41,184 +43,62 @@ router.get('/ws/:region/directory/:id', (request, response) => {
 			contents: {
 				content: [
 					{
-						index: 1,
-						title: {
-							icon_url: 'https://i.imgur.com/FE9a72R.jpg',
-							banner_url: 'https://i.imgur.com/FE9a72R.jpg',
-							platform: {
-								name: 'Nintendo 3DS Download Only',
-								id: 19,
-								device: 'CTR',
-								category: 8
-							},
-							publisher: {
-								name: 'The Pokémon Company',
-								id: 210 // Fake
-							},
-							display_genre: 'Adventure / Action / Puzzle',
-							rating_info: {
-								rating_system: {
-									name: 'ESRB',
-									id: 202
-								},
-								rating: {
-									icons: {
-										icon: [
-											{
-												url: 'https://kanzashi-ctr.cdn.nintendo.net/i/d96122dbb89250582816a67461bf8080f030402720e46032980582bca516778d.jpg',
-												type: 'normal'
-											},
-											{
-												url: 'https://kanzashi-ctr.cdn.nintendo.net/i/2d2bc9f60a5a4dbf44175cf1cfe1adc52abbee7ad66ebd6e3978966f84ae9c58.jpg',
-												type: 'small'
-											}
-										]
-									},
-									name: 'E',
-									age: 6,
-									id: 2
+						"title": {
+						"platform": {
+							"name": "3DS",
+							"id": 4,
+							"device": "CTR",
+							"category": 2
+						},
+						"publisher": {
+							"name": "Pretendo",
+							"id": 11
+						},
+						"display_genre": "test",
+						"rating_info": {
+							"rating_system": [{
+								"name": "ESRB",
+								"id": 202
+							}]
+						},
+						"rating": {
+							"icons": [{
+								"icon": {
+									"url": "https://kanzashi-ctr.cdn.nintendo.net/i/d96122dbb89250582816a67461bf8080f030402720e46032980582bca516778d.jpg",
+									"type": "normal"
 								}
-							},
-							star_rating_info: {
-								score: 0,
-								votes: 0,
-								star1: 0,
-								star2: 0,
-								star3: 0,
-								star4: 0,
-								star5: 0
-							},
-							release_date_on_eshop: '2019-12-13',
-							retail_sales: false,
-							eshop_sales: true,
-							demo_available: false,
-							aoc_available: false,
-							in_app_purchase: false,
-							name: 'RetroArch',
-							id: 50010000045116,
-							product_code: 'CTR-N-A98A'
-						}
+							}, {
+								"url": "https://kanzashi-ctr.cdn.nintendo.net/i/2d2bc9f60a5a4dbf44175cf1cfe1adc52abbee7ad66ebd6e3978966f84ae9c58.jpg",
+								"type": "small"
+							}],
+							"name": "E",
+							"age": 6,
+							"id": 2
+						},
+						"descriptors": {
+							"descriptor": [{
+								"name": "Test Esrb desc 1"
+							}, {
+								"name": "Test Esrb desc 2"
+							}]
+						},
+						"release_date_on_eshop": "2026-02-10",
+						"retail_sales": true,
+						"eshop_sales": true,
+						"demo_available": false,
+						"aoc_available": false,
+						"in_app_purchase": false,
+						"release_date_on_original": "2026-02-10",
+						"name": "title",
+						"id": 500100,
+						"product_code": "CTR-P-ASLE",
+						"icon_url": "None",
+						"banner_url": "None",
+						"new": true
 					},
-					{
-						index: 2,
-						title: {
-							icon_url: 'https://i.imgur.com/FUDKnMA.jpg',
-							banner_url: 'https://i.imgur.com/FE9a72R.jpg',
-							platform: {
-								name: 'Nintendo 3DS Download Only',
-								id: 19,
-								device: 'CTR',
-								category: 8
-							},
-							publisher: {
-								name: 'Libretro',
-								id: 900 // Fake
-							},
-							display_genre: 'Emulation / Retro',
-							rating_info: {
-								rating_system: {
-									name: 'ESRB',
-									id: 202
-								},
-								rating: {
-									icons: {
-										icon: [
-											{
-												url: 'https://kanzashi-ctr.cdn.nintendo.net/i/d96122dbb89250582816a67461bf8080f030402720e46032980582bca516778d.jpg',
-												type: 'normal'
-											},
-											{
-												url: 'https://kanzashi-ctr.cdn.nintendo.net/i/2d2bc9f60a5a4dbf44175cf1cfe1adc52abbee7ad66ebd6e3978966f84ae9c58.jpg',
-												type: 'small'
-											}
-										]
-									},
-									name: 'E',
-									age: 6,
-									id: 2
-								}
-							},
-							star_rating_info: {
-								score: 0,
-								votes: 0,
-								star1: 0,
-								star2: 0,
-								star3: 0,
-								star4: 0,
-								star5: 0
-							},
-							release_date_on_eshop: '2019-12-13',
-							retail_sales: false,
-							eshop_sales: true,
-							demo_available: false,
-							aoc_available: false,
-							in_app_purchase: false,
-							name: 'RetroArch - PCSX',
-							id: 50010000043091,
-							product_code: 'CTR-N-BE4B'
-						}
-					},
-					{
-						index: 3,
-						title: {
-							icon_url: 'https://i.imgur.com/TGvHMVQ.jpg',
-							banner_url: 'https://i.imgur.com/FE9a72R.jpg',
-							platform: {
-								name: 'Nintendo 3DS Download Only',
-								id: 19,
-								device: 'CTR',
-								category: 8
-							},
-							publisher: {
-								name: 'Libretro',
-								id: 900 // Fake
-							},
-							display_genre: 'Emulation / Retro',
-							rating_info: {
-								rating_system: {
-									name: 'ESRB',
-									id: 202
-								},
-								rating: {
-									icons: {
-										icon: [
-											{
-												url: 'https://kanzashi-ctr.cdn.nintendo.net/i/d96122dbb89250582816a67461bf8080f030402720e46032980582bca516778d.jpg',
-												type: 'normal'
-											},
-											{
-												url: 'https://kanzashi-ctr.cdn.nintendo.net/i/2d2bc9f60a5a4dbf44175cf1cfe1adc52abbee7ad66ebd6e3978966f84ae9c58.jpg',
-												type: 'small'
-											}
-										]
-									},
-									name: 'E',
-									age: 6,
-									id: 2
-								}
-							},
-							star_rating_info: {
-								score: 0,
-								votes: 0,
-								star1: 0,
-								star2: 0,
-								star3: 0,
-								star4: 0,
-								star5: 0
-							},
-							release_date_on_eshop: '2019-12-13',
-							retail_sales: false,
-							eshop_sales: true,
-							demo_available: false,
-							aoc_available: false,
-							in_app_purchase: false,
-							name: 'RetroArch - SNES',
-							id: 50010000043092,
-							product_code: 'CTR-N-BE4C'
-						}
-					}
+				},
 				],
-				total: 3
+				total: 1
 			}
 		}
 	});
