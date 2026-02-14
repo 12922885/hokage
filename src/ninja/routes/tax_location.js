@@ -5,3 +5,4 @@ router.get('/ws/my/tax_location', (request, response) => {
 });
 
 module.exports = router;
+// This is only really needed for US nnids as the US eShop requests this when purchasing titles
