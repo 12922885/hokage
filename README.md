@@ -8,3 +8,4 @@
 
 ## Hokage
 Hokage is a replacement for both the Ninja and Samurai servers for the 3DS. Does not replace Ninja or Samurai for the WiiU as the WiiU does not even need a Ninja or Samurai server
+## ⚠️ THE PURCHASE FUNCTION IN THIS CODE ONLY WORKS FOR ONE TITLE AS IT IS A FIXED FILE RIGHT NOW. The title is the "simple cia installer" by `Zachary Rude` https://github.com/Zachary-Rude/CIA-Installer
